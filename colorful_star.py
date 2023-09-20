@@ -20,3 +20,20 @@ color = ['green', 'yellow', 'blue', 'cyan']
 
 # Initialize the color index
 c = 0
+
+# Loop to draw the star
+for i in range(70):
+    # Move the turtle forward based on the loop index and a multiplier
+    t.forward(i * 8)
+
+    # Turn the turtle right by 144 degrees to create a star shape
+    t.right(144)
+
+    # Set the turtle's color from the list and update the color index
+    t.color(color[c])
+
+    # Cycle through the colors in the list
+    if c == 3:
+        c = 0
+    else:
+        c += 1
