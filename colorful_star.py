@@ -37,3 +37,6 @@ for i in range(70):
         c = 0
     else:
         c += 1
+        
+# Keep the turtle graphics window open until closed by the user
+turtle.exitonclick()
